@@ -17,7 +17,10 @@ int main(void)
 	{
 		polarity = "is zero";
 	}
-	polarity = (n > 0) ? "is positive" : "is negative";
+	else
+	{
+		polarity = (n > 0) ? "is positive" : "is negative";
+	}
 	printf("%i %s\n", n, polarity);
 	return (0);
 }
