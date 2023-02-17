@@ -8,10 +8,10 @@
 int main(void)
 {
 	int n;
+	char *polarity;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	char *polarity;
 
 	if (n == 0)
 	{
