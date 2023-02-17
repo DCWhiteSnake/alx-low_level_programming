@@ -13,12 +13,10 @@ int main(void)
 	int last_d;
 	char *str_n = malloc(sizeof(char) * 10);
 	char *ex_c;
-	int nc = 0;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	sprintf(str_n, "%d", (int)fabs((double)n));
-	nc = strlen(str_n);
 	last_d = atoi(&str_n[strlen(str_n) - 1]);
 	if (last_d == 0)
 	{
