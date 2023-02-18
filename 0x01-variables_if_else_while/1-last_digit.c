@@ -13,11 +13,18 @@ int main(void)
 	int last_d;
 	char *str_n = malloc(sizeof(char) * 10);
 	char *ex_c;
+	int is_negative = 0;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	sprintf(str_n, "%d", (int)fabs((double)n));
+	if (n < 0)
+		is_negative = 1;
 	last_d = atoi(&str_n[strlen(str_n) - 1]);
+	if (is_negative)
+	{
+		last_d *= -1;
+	}
 	if (last_d == 0)
 	{
 		ex_c = "and is 0";
