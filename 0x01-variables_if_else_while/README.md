@@ -6,3 +6,5 @@
 - 1-last_digit
   Using atoi and sprintf the main function parses the value of the last digit of
   the randomly generated number and performs some logic on it.
+- 2-print_alphabet.c
+  output the letters of the english alphabet in lowercase, using just putchar
