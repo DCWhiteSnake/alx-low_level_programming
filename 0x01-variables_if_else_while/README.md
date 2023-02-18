@@ -20,3 +20,5 @@
   Prints the letters of the alphabet in lowercase and in reverse
 - 8-print_base16.c
   Prints all the numbers of base 16 in lowercase
+- 9-print_comb.c
+  Prints the letters from 0 - 9 seperated by a ',' and a SPACE
