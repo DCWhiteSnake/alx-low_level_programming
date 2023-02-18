@@ -16,3 +16,5 @@
   print out single digit numbers of base 10 starting from 0, ie., 0123456789/n
 - 6-print_numberz.c
   print out same as before using putchar()
+- 7-print_tebahpla.c
+  print the letters of the alphabet in lowercase and in reverse
