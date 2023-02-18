@@ -13,8 +13,10 @@
 - 4-print_alphabt.c
   Print the letters of the alphabet but omit q and e.
 - 5-print_numbers.c
-  print out single digit numbers of base 10 starting from 0, ie., 0123456789/n
+  Prints out single digit numbers of base 10 starting from 0, ie., 0123456789/n
 - 6-print_numberz.c
-  print out same as before using putchar()
+  Prints out same as before using putchar()
 - 7-print_tebahpla.c
-  print the letters of the alphabet in lowercase and in reverse
+  Prints the letters of the alphabet in lowercase and in reverse
+- 8-print_base16.c
+  Prints all the numbers of base 16 in lowercase
