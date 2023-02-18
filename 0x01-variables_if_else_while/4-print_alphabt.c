@@ -12,7 +12,7 @@ int main(void)
 	{
 		if (i == 101 || i == 113)
 			continue;
-	        putchar(i);
+		putchar(i);
 	}
 	putchar(10);
 	return (0);
