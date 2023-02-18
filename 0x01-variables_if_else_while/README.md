@@ -7,4 +7,10 @@
   Using atoi and sprintf the main function parses the value of the last digit of
   the randomly generated number and performs some logic on it.
 - 2-print_alphabet.c
-  output the letters of the english alphabet in lowercase, using just putchar
+  Print out the letters of the english alphabet in lowercase, using just putchar
+- 3-print_alphabets.c
+  Same as before except you add the letters in all caps too.
+- 4-print_alphabt.c
+  Print the letters of the alphabet but omit q and e.
+- 5-print_numbers.c
+  print out single digit numbers of base 10 starting from 0, ie., 0123456789/n
