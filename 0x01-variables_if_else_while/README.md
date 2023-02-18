@@ -14,3 +14,5 @@
   Print the letters of the alphabet but omit q and e.
 - 5-print_numbers.c
   print out single digit numbers of base 10 starting from 0, ie., 0123456789/n
+- 6-print_numberz.c
+  print out same as before using putchar()
