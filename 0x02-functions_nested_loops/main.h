@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 
 int main(void);
-void _putchar(int dec);
+int _putchar(char c);

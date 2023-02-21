@@ -1,8 +1,7 @@
 #include "main.h"
-
 /**
  * main - print out the string _putchar to stdout
- * Return: 0 if no error
+ * Return: 0,1,2 depending on the returned value from unistd/write function
  */
 int main(void)
 {
