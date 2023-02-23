@@ -33,8 +33,18 @@ void print_remaining_days(int month, int day, int year)
 	}
 	else
 	{
-		printf("Day of the year: %d\n", day);
-		printf("Remaining days: %d\n", 365 - day);
+		const int max_days[] = {31, 59, 90,120, 151, 181, 212, 243, 273,
+					304, 334, 365};
 
+		if (day > (max_days[month - 1]))
+		{
+			printf("Invalid date: %02d/%02d/%04d\n", month,
+			       day - max_days[month -2], year);
+		}
+		else
+		{
+			printf("Day of the year: %d\n", day);
+			printf("Remaining days: %d\n", 365 - day);
+		}
 	}
 }
