@@ -20,8 +20,9 @@ int main(void)
 		if (i % 5 == 0)
 			printf("%s", "Buzz");
 		if ((i % 3 != 0) && (i % 5 != 0))
-			printf("%i", i);
-
+			printf("%d", i);
+		if (i % 100 == 0)
+			continue;
 		printf(" ");
 	}
 	printf("\n");
