@@ -1,20 +1,17 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * print_line - print (_ * n) and then append $
- * @n: number of times to print '_'
- * Return: 0 on completion
+ * print_line - prints straight line n times.
+ * @n: times straight line is printed.
+ * Return: no return.
  */
 void print_line(int n)
 {
 	int i;
 
-	if (!(n <= 0))
+	for (i = 0; i < n; i++)
 	{
-		for (i = 1; i <= n; i++)
-		{
-			_putchar(95);
-		}
+		_putchar(95);
 	}
-
 	_putchar(10);
 }
