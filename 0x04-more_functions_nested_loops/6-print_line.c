@@ -14,7 +14,6 @@ void print_line(int n)
 		{
 			_putchar(95);
 		}
-		_putchar(36);
 	}
 
 	_putchar(10);
