@@ -22,7 +22,8 @@ int main(void)
 		if ((i % 3 != 0) && (i % 5 != 0))
 			printf("%i", i);
 
-		putchar(32);
+		printf(" ");
 	}
+	printf("\n");
 	return (0);
 }
