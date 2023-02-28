@@ -20,6 +20,8 @@ void rev_string(char *s)
 
 	for (i = 0, n = len - 1; n > middle; n--, i++)
 	{
+		if (len == 0 || len == 1)
+			break;
 		c1 = (s + i);
 		c2 = (s + n);
 		swap_char(c1, c2);
