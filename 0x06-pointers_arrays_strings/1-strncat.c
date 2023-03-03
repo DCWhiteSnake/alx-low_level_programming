@@ -4,6 +4,7 @@
  * @dest: [char *] Pointer to the destination string.
  * @src: [char *] Poointer to the source string.
  * @n: amount of bytes to copy
+ * Return: the pointer dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
@@ -45,5 +46,5 @@ int _strlen(char *s)
 		x = *(s + count);
 	}
 
-        return (count);
+	return (count);
 }
