@@ -1,50 +1,27 @@
 #include "main.h"
 /**
- * _strncat - copy at most n bytes from src to dest
- * @dest: [char *] Pointer to the destination string.
- * @src: [char *] Poointer to the source string.
- * @n: amount of bytes to copy
- * Return: the pointer dest
+ * _strncat - concatenates two strings,
+ * @dest: destination.
+ * @src: source.
+ * @n: amount of bytes used from src.
+ * Return: the pointer to dest.
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i;
-	int j;
-	int k;
-	int d_len;
-	int s_len;
+	int count = 0, count2 = 0;
 
-	d_len = _strlen(dest);
-	s_len = _strlen(src);
-	i = 0;
-	k = d_len;
-	j = d_len + s_len;
-	while (n < s_len && k < j)
-		*(dest + k++) = *(src + i++);
-
-	*(dest + k) = '\0';
-	return (dest);
-}
-
-/**
- * _strlen - returns the length of a string of chars.
- * @s: [int *] Pointer to a char.
- * Return: The count of concurrent chars ie., the count of
- * of characters from &s till we encounter a \0
- */
-int _strlen(char *s)
-{
-	int x;
-	int count;
-
-	x = *s;
-	count = 0;
-
-	while (x != 0)
+	while (*(dest + count) != '\0')
 	{
-		count += 1;
-		x = *(s + count);
+		count++;
 	}
 
-	return (count);
+	while (count2 < n)
+	{
+		*(dest + count) = *(src + count2);
+		if (*(src + count2) == '\0')
+			break;
+		count++;
+		count2++;
+	}
+	return (dest);
 }
