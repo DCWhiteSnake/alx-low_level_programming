@@ -18,7 +18,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	i = 0;
 	temp = *s;
-	while (temp != 32)
+	while (temp != 32 && temp != '\0')
 	{
 		sub_string[i] = temp;
 		i++;
