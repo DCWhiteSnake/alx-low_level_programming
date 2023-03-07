@@ -18,7 +18,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	i = 0;
 	temp = *s;
-	while ((temp >= 65 && temp <= 90) || (temp >= 97 && temp <= 122))
+	while (temp != 32)
 	{
 		sub_string[i] = temp;
 		i++;
@@ -30,7 +30,7 @@ unsigned int _strspn(char *s, char *accept)
 	count = 0;
 	for (j = 0; j < i; j++)
 	{
-		if (in_str(accept, *(sub_string + i)))
+		if (in_str(accept, *(sub_string + j)))
 		{
 			count++;
 		}
