@@ -10,3 +10,5 @@ void rev_string(char *s);
 void swap_char(char *c1, char*c2);
 void puts2(char *str);
 void print_array(int *a, int n);
+char *_strcpy(char *dest, char *src);
+int _atoi(char *s);
