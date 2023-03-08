@@ -21,28 +21,23 @@ char *_strstr(char *haystack, char *needle)
 	hay_counter = 0;
 	needle_len = _strlen(needle);
 
-	temp_hay = *haystack;
-	while (temp_hay != '\0')
+	while (*haystack != '\0')
 	{
-		if (*needle == temp_hay)
-		{
-			break;
-		}
-		temp_hay = *(haystack + ++hay_counter);
+	 	hay_counter = 0;
+	 	temp_hay = *(haystack + hay_counter);
+
+	 	while (temp_hay == *(needle + hay_counter) && temp_hay != '\0')
+	 	{
+	 	        hay_counter++;
+			temp_hay = *(haystack + hay_counter);
+	 	}
+
+		if (hay_counter == needle_len)
+	 		return haystack;
+		haystack++;
 	}
 
-	for (i = 0; i < needle_len; i++)
-	{
-		if (*(needle + i) == *(haystack + i + hay_counter))
-		{
-			continue;
-		}
-		else
-		{
-			return ((void *)0);
-		}
-	}
-	return ((haystack + hay_counter));
+	return ((void *)0);
 }
 
 /**
@@ -52,9 +47,9 @@ char *_strstr(char *haystack, char *needle)
  */
 int _strlen(char *s)
 {
-	int len = 0;
+        int len = 0;
 
-	while (*s++)
-		len++;
-	return (len);
+        while (*s++)
+                len++;
+        return (len);
 }
