@@ -1,6 +1,6 @@
 #include "main.h"
 
-int in_str(char *a, char c);
+
 int _strlen(char *s);
 
 
@@ -22,7 +22,7 @@ char *_strstr(char *haystack, char *needle)
 	needle_len = _strlen(needle);
 
 	temp_hay = *haystack;
-	while (temp_hay != 0 && temp_hay != '\0')
+	while (temp_hay != '\0')
 	{
 		if (*needle == temp_hay)
 		{
@@ -62,27 +62,4 @@ int _strlen(char *s)
 	while (*s++)
 		len++;
 	return (len);
-}
-/**
- * in_str - Checks if a character exists in a string.
- * @a: the string in contention.
- * @c: the charater to test for.
- * Return: 0 if false,
- * 1 if true.
- */
-int in_str(char *a, char c)
-{
-	int i;
-	char chr;
-
-	chr = *a;
-	i = 0;
-
-	while (chr != '\0')
-	{
-		chr = *(a + i++);
-		if (chr == c)
-			return (1);
-	}
-	return (0);
 }
