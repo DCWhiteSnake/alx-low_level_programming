@@ -15,7 +15,6 @@ char *_strstr(char *haystack, char *needle)
 {
 	int needle_len;
 	char temp_hay;
-	int i;
 	int hay_counter;
 
 	hay_counter = 0;
