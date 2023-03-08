@@ -31,11 +31,6 @@ char *_strstr(char *haystack, char *needle)
 		temp_hay = *(haystack + ++hay_counter);
 	}
 
-	if (_strlen((haystack + hay_counter)) < needle_len)
-	{
-		return ((void *)0);
-	}
-
 	for (i = 0; i < needle_len; i++)
 	{
 		if (*(needle + i) == *(haystack + i + hay_counter))
