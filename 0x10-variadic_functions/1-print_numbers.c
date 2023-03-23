@@ -36,6 +36,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			}
 			j = 0;
 		}
+		else
+		{
+			_putchar(10);
+		}
 		i++;
 	}
 }
