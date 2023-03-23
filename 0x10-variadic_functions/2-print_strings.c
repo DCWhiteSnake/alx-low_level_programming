@@ -16,7 +16,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	while (i < n)
 	{
 		temp = va_arg(args, char*);
-		temp = (*temp == '\0')? "(nil)" : temp;
+		temp = (*temp == '\0') ? "(nil)" : temp;
 		if (i < n - 1)
 		{
 			if (*temp != '\0')
