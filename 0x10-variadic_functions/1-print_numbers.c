@@ -27,11 +27,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		_putchar_number_helper(temp);
 		if (i < n_copy - 1)
 		{
-			if (*separator == 0)
-			{
-				i++;
-				continue;
-			}
 			while (*(separator + j) != '\0')
 			{
 				_putchar(*(separator + j));
