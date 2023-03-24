@@ -2,7 +2,8 @@
 
 /**
  * print_all - print all types to the console.
- * @format: the
+ * @format: the list of formats
+ * Return: nothing.
  */
 void print_all(const char * const format, ...)
 {
@@ -35,10 +36,9 @@ void print_all(const char * const format, ...)
 		}
 		if (*(format + f_c + 1) == '\0')
 			printf("\n");
-		else if (t == 'c' || t == 'i' || t == 'f' || t == 's')
+		if (*(format + f_c + 1) != '\0' &&
+		    (t == 'c' || t == 'i' || t == 'f' || t == 's'))
 			printf(", ");
-		else
-			printf("%c", 0);
 
 		t = *(format + ++f_c);
 	}
