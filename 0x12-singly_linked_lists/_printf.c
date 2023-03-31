@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 int handle_backslash(const char *format, unsigned int start, char c);
 int handle_percent(va_list ap, char c);

@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /*
  * print_o - A function that prints an unsigned int in octal notation

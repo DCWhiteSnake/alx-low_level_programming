@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  * writenum - write a number to the console recursively

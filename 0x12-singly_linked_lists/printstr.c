@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  * printstr - prints string to the console
