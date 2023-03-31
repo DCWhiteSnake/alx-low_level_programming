@@ -3,6 +3,7 @@
 #include <stddef.h>
 #include <stdarg.h>
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
@@ -28,5 +29,5 @@ int print_X(va_list X);
 int print_u(va_list u);
 int print_o(va_list o);
 int printstr(char *c);
-int writenum(int n, int start);
+int writenum(int n, int digit_count);
 #endif
